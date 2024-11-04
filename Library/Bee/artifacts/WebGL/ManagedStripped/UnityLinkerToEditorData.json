@@ -408,6 +408,12 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
+          },
+          {
             "name": "Required by Vehicles Module",
             "scenes": [],
             "dependencyType": 2,
@@ -524,6 +530,12 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
+          },
+          {
             "name": "Required by Vehicles Module",
             "scenes": [],
             "dependencyType": 2,
@@ -536,6 +548,10 @@
             "icon": "package/com.unity.modules.webgl"
           }
         ]
+      },
+      {
+        "name": "TLS",
+        "dependencies": []
       },
       {
         "name": "Vehicles",

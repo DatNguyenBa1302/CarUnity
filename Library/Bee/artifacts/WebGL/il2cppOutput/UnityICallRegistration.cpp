@@ -606,6 +606,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_get_childCount();
 		Register_UnityEngine_Transform_get_childCount();
 
+		//System.Void UnityEngine.Transform::Internal_LookAt_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_Internal_LookAt_Injected();
+		Register_UnityEngine_Transform_Internal_LookAt_Injected();
+
 		//System.Void UnityEngine.Transform::get_position_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_get_position_Injected();
 		Register_UnityEngine_Transform_get_position_Injected();
@@ -641,6 +645,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.WheelCollider::GetWorldPose(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_WheelCollider_GetWorldPose();
 		Register_UnityEngine_WheelCollider_GetWorldPose();
+
+		//System.Void UnityEngine.WheelCollider::set_brakeTorque(System.Single)
+		void Register_UnityEngine_WheelCollider_set_brakeTorque();
+		Register_UnityEngine_WheelCollider_set_brakeTorque();
 
 		//System.Void UnityEngine.WheelCollider::set_motorTorque(System.Single)
 		void Register_UnityEngine_WheelCollider_set_motorTorque();

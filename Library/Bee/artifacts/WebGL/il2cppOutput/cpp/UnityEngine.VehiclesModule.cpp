@@ -132,6 +132,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_motorTorque_m4958AAF7D
 	_il2cpp_icall_func = (WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_motorTorque(System.Single)");
 	_il2cpp_icall_func(__this, ___0_value);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
+	static WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_brakeTorque(System.Single)");
+	_il2cpp_icall_func(__this, ___0_value);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);

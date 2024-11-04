@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using Newtonsoft.Json;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class TestController : MonoBehaviour
 {
     public WheelCollider frontRightWheelCollider;
-    public WheelCollider frontLeftWheelCollider;
+    public WheelCollider frontLeftWheelCollider; 
     public WheelCollider rearLeftWheelCollider;
     public WheelCollider rearRightWheelCollider;
 
@@ -18,18 +20,25 @@ public class TestController : MonoBehaviour
     private bool isExecuting = false;
     // Start is called before the first frame update
 
+    public void ReceiveCommand(string json)
+    {
+        // Phân tích chuỗi thành các phần
+        MovementCommand[] commands = JsonConvert.DeserializeObject<MovementCommand[]>(json);
+
+        foreach (var command in commands)
+        {
+            movementQueue.Enqueue(command);
+        }
+
+        if (!isExecuting)
+        {
+            StartCoroutine(ExecuteMovementQueue());
+        }
+    }
+
     private void Start()
     {
-        // Ví dụ: thêm các hành động vào hàng đợi
-        // Di chuyển tới trong 2 giây
-        movementQueue.Enqueue(new MovementCommand(100f, 100f, 100f, 100f, 2f));
-        
-        movementQueue.Enqueue(new MovementCommand(0f, 0f, 0f, 0f, 2f));         // Dừng trong 1 giây
-        movementQueue.Enqueue(new MovementCommand(-100f, -100f, -100f, -100f, 2f));// Di chuyển lùi trong 2 giây
-        movementQueue.Enqueue(new MovementCommand(0f, 0f, 0f, 0f, 2f));         // Dừng trong 1 giây
 
-        // Bắt đầu thực hiện hàng đợi
-        StartExecution();
     }
 
     public void StartExecution()
@@ -44,6 +53,9 @@ public class TestController : MonoBehaviour
     {
         UpdateWheels();
     }
+
+
+
     private IEnumerator ExecuteMovementQueue()
     {
         isExecuting = true;
@@ -53,6 +65,7 @@ public class TestController : MonoBehaviour
             // Lấy hành động tiếp theo từ hàng đợi
             MovementCommand command = movementQueue.Dequeue();
 
+            Steering(command.Angle);
             // Thiết lập tốc độ cho các bánh xe
             SetSpeed(command.FrontLeftSpeed, command.FrontRightSpeed, command.RearLeftSpeed, command.RearRightSpeed);
             UpdateWheels(); // Cập nhật hình ảnh bánh xe
@@ -69,19 +82,39 @@ public class TestController : MonoBehaviour
 
     private void SetSpeed(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed)
     {
-        if(frontLeftSpeed != 0f && frontRightSpeed != 0f && rearLeftSpeed != 0f && rearRightSpeed != 0f)
+        if (frontLeftSpeed != 0f && frontRightSpeed != 0f && rearLeftSpeed != 0f && rearRightSpeed != 0f)
         {
             frontLeftWheelCollider.motorTorque = frontLeftSpeed;
             frontRightWheelCollider.motorTorque = frontRightSpeed;
             rearLeftWheelCollider.motorTorque = rearLeftSpeed;
             rearRightWheelCollider.motorTorque = rearRightSpeed;
             ClearSpeed(0f);
-        }else
+        }
+        else
         {
             ClearSpeed(1000f);
         }
         // Thiết lập tốc độ của từng bánh xe
-        
+
+    }
+
+    private void Steering(float angle)
+    {
+        if (angle > 35f)
+        {
+            frontLeftWheelCollider.steerAngle = 35f;
+            frontRightWheelCollider.steerAngle = 35f;
+        }
+        else if (angle < -35f)
+        {
+            frontLeftWheelCollider.steerAngle = -35f;
+            frontRightWheelCollider.steerAngle = -35f;
+        }
+        else
+        {
+            frontLeftWheelCollider.steerAngle = angle;
+            frontRightWheelCollider.steerAngle = angle;
+        }
     }
     private void ClearSpeed(float barkTorque)
     {
