@@ -1900,11 +1900,17 @@ struct U3CU3Ec__DisplayClass6_0_tA94B883F7263633503099BA2D2DA99C3A9A63977  : pub
 {
 	Type_t* ___type;
 };
-struct U3CExecuteMovementQueueU3Ed__14_t2F1363BDE5EC5FFC838A50985EC335CD563694DD  : public RuntimeObject
+struct U3CExecuteMovementQueueU3Ed__16_t73608D85516D0396DD8196D8F2420D499551287D  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* ___U3CU3E4__this;
+};
+struct U3CWaitU3Ed__17_t677C23109B893C86BB51575019BA1C20A9FB5FB5  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	float ___duration;
 };
 struct EncodingUtility_t317B92DD3ECBFC6F61B28E1167A9B741A812B70B  : public RuntimeObject
 {
@@ -13149,25 +13155,28 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4983[2] =
 	static_cast<int32_t>(offsetof(FollowCar_tFEC72AB1907951EC4BA9F357707DFAFA0302411B, ___carTransForm)),static_cast<int32_t>(offsetof(FollowCar_tFEC72AB1907951EC4BA9F357707DFAFA0302411B, ___cameraPointTransForm)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4984[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__14_t2F1363BDE5EC5FFC838A50985EC335CD563694DD, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__14_t2F1363BDE5EC5FFC838A50985EC335CD563694DD, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__14_t2F1363BDE5EC5FFC838A50985EC335CD563694DD, ___U3CU3E4__this)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4985[10] = 
+	static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__16_t73608D85516D0396DD8196D8F2420D499551287D, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__16_t73608D85516D0396DD8196D8F2420D499551287D, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CExecuteMovementQueueU3Ed__16_t73608D85516D0396DD8196D8F2420D499551287D, ___U3CU3E4__this)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4985[3] = 
+{
+	static_cast<int32_t>(offsetof(U3CWaitU3Ed__17_t677C23109B893C86BB51575019BA1C20A9FB5FB5, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__17_t677C23109B893C86BB51575019BA1C20A9FB5FB5, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__17_t677C23109B893C86BB51575019BA1C20A9FB5FB5, ___duration)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4986[10] = 
 {
 	static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___frontRightWheelCollider)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___frontLeftWheelCollider)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___rearLeftWheelCollider)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___rearRightWheelCollider)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___frontRightWheelTransForm)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___frontLeftWheelTransForm)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___rearRightWheelTransForm)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___rearLeftWheelTransForm)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___movementQueue)),static_cast<int32_t>(offsetof(TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72, ___isExecuting)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4986[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4987[5] = 
 {
 	static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___FilePathsData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TypesData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalTypes)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalFiles)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___IsEditorOnly)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4990[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4991[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___3FE7F9E0FAF130FD073B1830EB36A75C8C2FC25E00A46A444BE27FC174E37464)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___518C6305BDF54644A4B3FEC5C3563E68755B43FFB6128E247A32B740F1FD4A73)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4994[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4995[1] = 
 {
 	static_cast<int32_t>(offsetof(DataContractAttribute_tD065D7D14CC8AA548815166AB8B8210D1B3C699F, ___isReference)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4995[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4996[4] = 
 {
 	static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___name)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___order)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___isRequired)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___emitDefaultValue)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4996[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4997[1] = 
 {
 	static_cast<int32_t>(offsetof(EnumMemberAttribute_t65B5E85E642C96791DD6AE5EAD0276350954126F, ___value)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5001[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5002[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};

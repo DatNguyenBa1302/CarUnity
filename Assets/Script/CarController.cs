@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovementCommand
@@ -8,16 +9,22 @@ public class MovementCommand
     public float FrontRightSpeed { get; private set; }
     public float RearLeftSpeed { get; private set; }
     public float RearRightSpeed { get; private set; }
-    public float Angle { get; private set; }
-    public float Duration { get; private set; }
+    public float Angle { get;  set; }
+    public float Duration { get; set; }
 
-    public MovementCommand(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed,float angle, float duration)
+    public MovementCommand(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed, float angle, float duration)
     {
         FrontLeftSpeed = frontLeftSpeed;
         FrontRightSpeed = frontRightSpeed;
         RearLeftSpeed = rearLeftSpeed;
         RearRightSpeed = rearRightSpeed;
         Angle = angle;
+        Duration = duration;
+    }
+
+
+    public void SetDuration(float duration = Mathf.Infinity)
+    {
         Duration = duration;
     }
 }

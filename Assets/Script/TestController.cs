@@ -20,6 +20,21 @@ public class TestController : MonoBehaviour
     private bool isExecuting = false;
     // Start is called before the first frame update
 
+    public void MoveCar(string command)
+    {
+        Debug.Log("Received command: " + command); // Xác nhận lệnh từ WebGL
+
+        string[] parameters = command.Split(',');
+        float frontLeftSpeed = float.Parse(parameters[0]);
+        float frontRightSpeed = float.Parse(parameters[1]);
+        float rearLeftSpeed = float.Parse(parameters[2]);
+        float rearRightSpeed = float.Parse(parameters[3]);
+        float angle = float.Parse(parameters[4]);
+        float duration = float.Parse(parameters[5]);
+
+        AddQueue(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed, angle, duration);
+    }
+
     public void ReceiveCommand(string json)
     {
         // Phân tích chuỗi thành các phần
@@ -38,8 +53,13 @@ public class TestController : MonoBehaviour
 
     private void Start()
     {
-
     }
+    public void AddQueue(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed, float angle, float duration)
+    {
+        movementQueue.Enqueue(new MovementCommand(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed, angle, duration));
+        StartExecution();
+    }
+
 
     public void StartExecution()
     {
@@ -80,6 +100,10 @@ public class TestController : MonoBehaviour
         isExecuting = false;
     }
 
+    private IEnumerator Wait(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+    }
     private void SetSpeed(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed)
     {
         if (frontLeftSpeed != 0f && frontRightSpeed != 0f && rearLeftSpeed != 0f && rearRightSpeed != 0f)
