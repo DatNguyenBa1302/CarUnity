@@ -24,8 +24,11 @@ extern void MovementCommand_get_Angle_mE4D0F0D7F762EBF861C9CCBDE831D7BF06589BA2 
 extern void MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913 (void);
 extern void MovementCommand_get_Duration_mF4D2468BDFA101D0770D8767692E47B8E007BA64 (void);
 extern void MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6 (void);
-extern void MovementCommand__ctor_mE3156D6A742376F1317C04845C946CFD90225644 (void);
+extern void MovementCommand__ctor_mB35ECD7EB4C52152963F55A210C92DEC76311196 (void);
+extern void MovementCommand__ctor_m6DA8458E12E2C4E08F69720D7CC824756FECF082 (void);
+extern void MovementCommand__ctor_mE13DA1BEF8EA06477CB70B2A8DBBC347694E704B (void);
 extern void MovementCommand_SetDuration_m8B201EE24528A817E5DF4F3CD372958C4127CE3B (void);
+extern void MovementCommand_TransformData_m1A0FA8E21067827C04989E9EE52E5DA02AF91BDA (void);
 extern void CarController_Start_m15C0896D5EB70572BF27815FE41FF8E52DA22145 (void);
 extern void CarController_FixedUpdate_mDD68416C9FFF2FE776131D6365AE9C585C973405 (void);
 extern void CarController_MoveCar_m235ACE400E16CBF4A12222D32603A09C2190C464 (void);
@@ -47,7 +50,7 @@ extern void FollowCar__ctor_m5C08824338C895CA1C9D3DFD3A20BA22ED2D1A61 (void);
 extern void TestController_MoveCar_mE0C2A9FA8D8EE99A6F9E1C1E7EFCC3A18378F0EC (void);
 extern void TestController_ReceiveCommand_m51A5FE4C69457A159F56B0523A3ECA6A0DB599B6 (void);
 extern void TestController_Start_mC172F049618446009EE8A035324A9C2C28AB7D3E (void);
-extern void TestController_AddQueue_m6346F812CFC5671E55F764EF14C15F5FFEFEB3B8 (void);
+extern void TestController_AddQueue_m511578E05A7ECEB1D52A4A405DE6C2B66B1A12DE (void);
 extern void TestController_StartExecution_m4589DD428CA92F83D5286E6852A979CF15FD2A8A (void);
 extern void TestController_Update_mDB25302FA5CC60716C8E1654CD96CB1521713734 (void);
 extern void TestController_ExecuteMovementQueue_m9F3FE2F1E5938566CF6B812F0BB710F48C0DF155 (void);
@@ -72,7 +75,7 @@ extern void U3CWaitU3Ed__17_System_Collections_IEnumerator_Reset_mC3DF573B856CAC
 extern void U3CWaitU3Ed__17_System_Collections_IEnumerator_get_Current_mB4B226207EF2C5E7849784BD996911193585BC73 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[60] = 
+static Il2CppMethodPointer s_methodPointers[63] = 
 {
 	MovementCommand_get_FrontLeftSpeed_mF76F37FAC2F74F1A34900CFCE0BAE832F4BBDC10,
 	MovementCommand_set_FrontLeftSpeed_m0E9B0193344E0EAE4EE578C4C4B3BD2DC2329A71,
@@ -86,8 +89,11 @@ static Il2CppMethodPointer s_methodPointers[60] =
 	MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913,
 	MovementCommand_get_Duration_mF4D2468BDFA101D0770D8767692E47B8E007BA64,
 	MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6,
-	MovementCommand__ctor_mE3156D6A742376F1317C04845C946CFD90225644,
+	MovementCommand__ctor_mB35ECD7EB4C52152963F55A210C92DEC76311196,
+	MovementCommand__ctor_m6DA8458E12E2C4E08F69720D7CC824756FECF082,
+	MovementCommand__ctor_mE13DA1BEF8EA06477CB70B2A8DBBC347694E704B,
 	MovementCommand_SetDuration_m8B201EE24528A817E5DF4F3CD372958C4127CE3B,
+	MovementCommand_TransformData_m1A0FA8E21067827C04989E9EE52E5DA02AF91BDA,
 	CarController_Start_m15C0896D5EB70572BF27815FE41FF8E52DA22145,
 	CarController_FixedUpdate_mDD68416C9FFF2FE776131D6365AE9C585C973405,
 	CarController_MoveCar_m235ACE400E16CBF4A12222D32603A09C2190C464,
@@ -109,7 +115,7 @@ static Il2CppMethodPointer s_methodPointers[60] =
 	TestController_MoveCar_mE0C2A9FA8D8EE99A6F9E1C1E7EFCC3A18378F0EC,
 	TestController_ReceiveCommand_m51A5FE4C69457A159F56B0523A3ECA6A0DB599B6,
 	TestController_Start_mC172F049618446009EE8A035324A9C2C28AB7D3E,
-	TestController_AddQueue_m6346F812CFC5671E55F764EF14C15F5FFEFEB3B8,
+	TestController_AddQueue_m511578E05A7ECEB1D52A4A405DE6C2B66B1A12DE,
 	TestController_StartExecution_m4589DD428CA92F83D5286E6852A979CF15FD2A8A,
 	TestController_Update_mDB25302FA5CC60716C8E1654CD96CB1521713734,
 	TestController_ExecuteMovementQueue_m9F3FE2F1E5938566CF6B812F0BB710F48C0DF155,
@@ -135,74 +141,77 @@ static Il2CppMethodPointer s_methodPointers[60] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[60] = 
+static const int32_t s_InvokerIndices[63] = 
 {
-	2352,
-	1989,
-	2352,
-	1989,
-	2352,
-	1989,
-	2352,
-	1989,
-	2352,
-	1989,
-	2352,
-	1989,
+	2353,
+	1990,
+	2353,
+	1990,
+	2353,
+	1990,
+	2353,
+	1990,
+	2353,
+	1990,
+	2353,
+	1990,
+	329,
+	1990,
+	2379,
+	1990,
 	199,
-	1989,
-	2378,
-	2378,
-	1970,
-	1789,
-	1989,
-	546,
-	2378,
-	1189,
-	2378,
-	1957,
-	2378,
-	2292,
-	2330,
-	2378,
-	2330,
-	2378,
-	2378,
-	2378,
-	1970,
-	1970,
-	2378,
-	199,
-	2378,
-	2378,
-	2330,
-	1789,
-	546,
-	1989,
-	1989,
-	2378,
-	1189,
-	2378,
-	1957,
-	2378,
-	2292,
-	2330,
-	2378,
-	2330,
-	1957,
-	2378,
-	2292,
-	2330,
-	2378,
-	2330,
-	4046,
-	2378,
+	2379,
+	2379,
+	1971,
+	1790,
+	1990,
+	547,
+	2379,
+	1190,
+	2379,
+	1958,
+	2379,
+	2293,
+	2331,
+	2379,
+	2331,
+	2379,
+	2379,
+	2379,
+	1971,
+	1971,
+	2379,
+	329,
+	2379,
+	2379,
+	2331,
+	1790,
+	547,
+	1990,
+	1990,
+	2379,
+	1190,
+	2379,
+	1958,
+	2379,
+	2293,
+	2331,
+	2379,
+	2331,
+	1958,
+	2379,
+	2293,
+	2331,
+	2379,
+	2331,
+	4047,
+	2379,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	60,
+	63,
 	s_methodPointers,
 	0,
 	NULL,

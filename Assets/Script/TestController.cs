@@ -1,11 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using Assets.Script;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class TestController : MonoBehaviour
 {
+    private Rigidbody rb;
+
     public WheelCollider frontRightWheelCollider;
     public WheelCollider frontLeftWheelCollider; 
     public WheelCollider rearLeftWheelCollider;
@@ -16,29 +20,40 @@ public class TestController : MonoBehaviour
     public Transform rearRightWheelTransForm;
     public Transform rearLeftWheelTransForm;
 
-    private Queue<MovementCommand> movementQueue = new Queue<MovementCommand>();
+    //Khai báo các render texture cho camera
+    public RenderTexture cameraTextureLeft;
+    public RenderTexture cameraTextureCenter;
+    public RenderTexture cameraTextureRight;
+
+    private Queue<Car> movementQueue = new Queue<Car>();
     private bool isExecuting = false;
     // Start is called before the first frame update
 
-    public void MoveCar(string command)
+    public void MoveCar(string dataFrontEnd)
     {
-        Debug.Log("Received command: " + command); // Xác nhận lệnh từ WebGL
+        Debug.Log("Received command: " + dataFrontEnd); // Xác nhận lệnh từ WebGL
 
-        string[] parameters = command.Split(',');
-        float frontLeftSpeed = float.Parse(parameters[0]);
-        float frontRightSpeed = float.Parse(parameters[1]);
-        float rearLeftSpeed = float.Parse(parameters[2]);
-        float rearRightSpeed = float.Parse(parameters[3]);
-        float angle = float.Parse(parameters[4]);
-        float duration = float.Parse(parameters[5]);
+        string[] parameters = dataFrontEnd.Split(',');
+        if (parameters.Length == 5)
+        {
+            float frontLeftSpeed = float.Parse(parameters[0]);
+            float frontRightSpeed = float.Parse(parameters[1]);
+            float rearLeftSpeed = float.Parse(parameters[2]);
+            float rearRightSpeed = float.Parse(parameters[3]);
+            float duration = float.Parse(parameters[4]);
 
-        AddQueue(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed, angle, duration);
+            AddQueue(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed, duration);
+        }else if(parameters.Length == 1)
+        {
+            Steering(float.Parse(parameters[0]));
+        }
+
     }
 
     public void ReceiveCommand(string json)
     {
         // Phân tích chuỗi thành các phần
-        MovementCommand[] commands = JsonConvert.DeserializeObject<MovementCommand[]>(json);
+        Car[] commands = JsonConvert.DeserializeObject<Car[]>(json);
 
         foreach (var command in commands)
         {
@@ -53,13 +68,18 @@ public class TestController : MonoBehaviour
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
+        movementQueue.Enqueue(new Car(80, 80, 80, 80, Mathf.Infinity));
+
+        //Steering(30);
+        StartExecution();
+
     }
-    public void AddQueue(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed, float angle, float duration)
+    public void AddQueue(float frontLeftSpeed, float frontRightSpeed, float rearLeftSpeed, float rearRightSpeed, float duration)
     {
-        movementQueue.Enqueue(new MovementCommand(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed, angle, duration));
+        movementQueue.Enqueue(new Car(frontLeftSpeed, frontRightSpeed, rearLeftSpeed, rearRightSpeed,duration));
         StartExecution();
     }
-
 
     public void StartExecution()
     {
@@ -68,10 +88,21 @@ public class TestController : MonoBehaviour
             StartCoroutine(ExecuteMovementQueue());
         }
     }
-
+    private void LateUpdate()
+    {
+        DetectLinePosition();
+    }
     private void Update()
     {
-        UpdateWheels();
+        if (TrackBoundaryCheck.IsBoundary)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            SetSpeed(0, 0, 0, 0);
+            movementQueue.Clear();
+            
+        }
+        
     }
 
 
@@ -83,9 +114,8 @@ public class TestController : MonoBehaviour
         while (movementQueue.Count > 0)
         {
             // Lấy hành động tiếp theo từ hàng đợi
-            MovementCommand command = movementQueue.Dequeue();
+            Car command = movementQueue.Dequeue();
 
-            Steering(command.Angle);
             // Thiết lập tốc độ cho các bánh xe
             SetSpeed(command.FrontLeftSpeed, command.FrontRightSpeed, command.RearLeftSpeed, command.RearRightSpeed);
             UpdateWheels(); // Cập nhật hình ảnh bánh xe
@@ -163,5 +193,36 @@ public class TestController : MonoBehaviour
         wheelCollider.GetWorldPose(out pos, out rot);
         transform.position = pos;
         transform.rotation = rot;
+    }
+
+    void DetectLinePosition()
+    {
+        // Lấy màu từ ba camera
+        bool leftOnLine = IsOnLine(cameraTextureLeft);
+        bool centerOnLine = IsOnLine(cameraTextureCenter);
+        bool rightOnLine = IsOnLine(cameraTextureRight);
+
+        Debug.Log("center: " + centerOnLine);
+        Debug.Log("left: " + leftOnLine);
+        Debug.Log("right: " + rightOnLine);
+        // Kiểm tra màu đen và điều chỉnh hướng
+        if (!centerOnLine)
+        {
+            SetSpeed(0f, 0f, 0f, 0f);
+        }
+    }
+    bool IsOnLine(RenderTexture cameraTexture)
+    {
+        Texture2D tex = new Texture2D(16, 16, TextureFormat.RGB24, false);
+        RenderTexture.active = cameraTexture;
+        tex.ReadPixels(new Rect(0, 0, 1, 1), 0, 0);
+        tex.Apply();
+
+        Color color = tex.GetPixel(0, 0);
+        //Debug.Log($"Color detected: {color}");
+        RenderTexture.active = null;
+
+        // Kiểm tra nếu màu gần đen (một ngưỡng cho phép để nhận diện)
+        return (color.r < 0.1f && color.g < 0.1f && color.b < 0.1f);
     }
 }

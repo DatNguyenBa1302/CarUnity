@@ -575,8 +575,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_FrontLef
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_FrontRightSpeed_m30686D05C61E58476C88EC8D3E0D9EEDCAA7D79F_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_RearLeftSpeed_m5FC6382493C6C90B1E34E08561675EF068615D96_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_RearRightSpeed_m039AEA2BE9676FDF2AFAA8CBA9AC1EC868CBDC0A_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CarController_SetSpeed_mBC4BF0FB4910CC0CFDA1688810770C43B8ED9706 (CarController_t040DDF82A09770A77B8C41CDB423E13FE6F68CD5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CarController_WaitAndStop_mF8D1D38113C9AFBAB9C9C299552AEAE1F17F9D1D (CarController_t040DDF82A09770A77B8C41CDB423E13FE6F68CD5* __this, float ___0_duration, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
@@ -602,7 +602,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_LookAt_mA8567593181FD78BBDC2AF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_AddQueue_m6346F812CFC5671E55F764EF14C15F5FFEFEB3B8 (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_angle, float ___5_duration, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_AddQueue_m511578E05A7ECEB1D52A4A405DE6C2B66B1A12DE (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_duration, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_Steering_mC88C10654D5F03A3805BFB20C93EB786BC7AF97B (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_angle, const RuntimeMethod* method) ;
 inline MovementCommandU5BU5D_t29ABF644BE41641975D9BD09CE43048186FB50E2* JsonConvert_DeserializeObject_TisMovementCommandU5BU5D_t29ABF644BE41641975D9BD09CE43048186FB50E2_m5C7CFE0F37CF61971540AF232F4B537EC02AA55C (String_t* ___0_value, const RuntimeMethod* method)
 {
 	return ((  MovementCommandU5BU5D_t29ABF644BE41641975D9BD09CE43048186FB50E2* (*) (String_t*, const RuntimeMethod*))JsonConvert_DeserializeObject_TisRuntimeObject_m4AED5444440BFC03D3CB9506F186AC7C37B45EF2_gshared)(___0_value, method);
@@ -612,7 +613,7 @@ inline void Queue_1_Enqueue_mEB21554F6CD6FAA0096ABE58AB827FC864A9BDAA (Queue_1_t
 	((  void (*) (Queue_1_t176A096FE2B54B9843772B4CF64D5D7B3D2DF1A7*, MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5*, const RuntimeMethod*))Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF_gshared)(__this, ___0_item, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TestController_ExecuteMovementQueue_m9F3FE2F1E5938566CF6B812F0BB710F48C0DF155 (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mE3156D6A742376F1317C04845C946CFD90225644 (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_angle, float ___5_duration, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mB35ECD7EB4C52152963F55A210C92DEC76311196 (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_duration, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_StartExecution_m4589DD428CA92F83D5286E6852A979CF15FD2A8A (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, const RuntimeMethod* method) ;
 inline int32_t Queue_1_get_Count_m5EC12876971639F99305B117472BB1133E965B9A_inline (Queue_1_t176A096FE2B54B9843772B4CF64D5D7B3D2DF1A7* __this, const RuntimeMethod* method)
 {
@@ -628,8 +629,6 @@ inline MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* Queue_1_Dequeu
 {
 	return ((  MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* (*) (Queue_1_t176A096FE2B54B9843772B4CF64D5D7B3D2DF1A7*, const RuntimeMethod*))Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84_gshared)(__this, method);
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_Angle_mE4D0F0D7F762EBF861C9CCBDE831D7BF06589BA2_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_Steering_mC88C10654D5F03A3805BFB20C93EB786BC7AF97B (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_angle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_FrontLeftSpeed_mF76F37FAC2F74F1A34900CFCE0BAE832F4BBDC10_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_FrontRightSpeed_m1BF22D71EBB41F581E1C706669A449FC995E015B_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_RearLeftSpeed_m87D878A96BA6A00893A22D3F1FAF344F2EBF9071_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) ;
@@ -740,7 +739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand_set_Duration_mD5E9ABDA8A
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mE3156D6A742376F1317C04845C946CFD90225644 (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_angle, float ___5_duration, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mB35ECD7EB4C52152963F55A210C92DEC76311196 (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_duration, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -752,10 +751,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mE3156D6A742376F13
 		MovementCommand_set_RearLeftSpeed_m5FC6382493C6C90B1E34E08561675EF068615D96_inline(__this, L_2, NULL);
 		float L_3 = ___3_rearRightSpeed;
 		MovementCommand_set_RearRightSpeed_m039AEA2BE9676FDF2AFAA8CBA9AC1EC868CBDC0A_inline(__this, L_3, NULL);
-		float L_4 = ___4_angle;
-		MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline(__this, L_4, NULL);
-		float L_5 = ___5_duration;
-		MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6_inline(__this, L_5, NULL);
+		float L_4 = ___4_duration;
+		MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6_inline(__this, L_4, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_m6DA8458E12E2C4E08F69720D7CC824756FECF082 (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_angle, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		float L_0 = ___0_angle;
+		MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline(__this, L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand__ctor_mE13DA1BEF8EA06477CB70B2A8DBBC347694E704B (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
@@ -764,6 +777,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand_SetDuration_m8B201EE2452
 	{
 		float L_0 = ___0_duration;
 		MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6_inline(__this, L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementCommand_TransformData_m1A0FA8E21067827C04989E9EE52E5DA02AF91BDA (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_angle, float ___5_duration, const RuntimeMethod* method) 
+{
+	{
 		return;
 	}
 }
@@ -1093,7 +1112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FollowCar__ctor_m5C08824338C895CA1C9D3DF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_MoveCar_mE0C2A9FA8D8EE99A6F9E1C1E7EFCC3A18378F0EC (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, String_t* ___0_command, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_MoveCar_mE0C2A9FA8D8EE99A6F9E1C1E7EFCC3A18378F0EC (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, String_t* ___0_dataFrontEnd, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1102,63 +1121,87 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_MoveCar_mE0C2A9FA8D8EE99A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA1E3D75D531E0513532A591BB5814CCE7805A947);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	float V_3 = 0.0f;
 	float V_4 = 0.0f;
 	float V_5 = 0.0f;
 	{
-		String_t* L_0 = ___0_command;
+		String_t* L_0 = ___0_dataFrontEnd;
 		String_t* L_1;
 		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralA1E3D75D531E0513532A591BB5814CCE7805A947, L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		String_t* L_2 = ___0_command;
+		String_t* L_2 = ___0_dataFrontEnd;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3;
 		L_3 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_2, ((int32_t)44), 0, NULL);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
-		int32_t L_5 = 0;
-		String_t* L_6 = (L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_5));
-		float L_7;
-		L_7 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_6, NULL);
-		V_0 = L_7;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_4;
-		int32_t L_9 = 1;
-		String_t* L_10 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
-		float L_11;
-		L_11 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_10, NULL);
-		V_1 = L_11;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_8;
-		int32_t L_13 = 2;
-		String_t* L_14 = (L_12)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
-		float L_15;
-		L_15 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_14, NULL);
-		V_2 = L_15;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = L_12;
-		int32_t L_17 = 3;
-		String_t* L_18 = (L_16)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_17));
-		float L_19;
-		L_19 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_18, NULL);
-		V_3 = L_19;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_16;
-		int32_t L_21 = 4;
-		String_t* L_22 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_21));
-		float L_23;
-		L_23 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_22, NULL);
-		V_4 = L_23;
-		int32_t L_24 = 5;
-		String_t* L_25 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
-		float L_26;
-		L_26 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_25, NULL);
-		V_5 = L_26;
-		float L_27 = V_0;
-		float L_28 = V_1;
-		float L_29 = V_2;
-		float L_30 = V_3;
-		float L_31 = V_4;
-		float L_32 = V_5;
-		TestController_AddQueue_m6346F812CFC5671E55F764EF14C15F5FFEFEB3B8(__this, L_27, L_28, L_29, L_30, L_31, L_32, NULL);
+		V_0 = L_3;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = V_0;
+		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))) == ((uint32_t)5))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = V_0;
+		int32_t L_6 = 0;
+		String_t* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		float L_8;
+		L_8 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_7, NULL);
+		V_1 = L_8;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = V_0;
+		int32_t L_10 = 1;
+		String_t* L_11 = (L_9)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		float L_12;
+		L_12 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_11, NULL);
+		V_2 = L_12;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = V_0;
+		int32_t L_14 = 2;
+		String_t* L_15 = (L_13)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_14));
+		float L_16;
+		L_16 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_15, NULL);
+		V_3 = L_16;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = V_0;
+		int32_t L_18 = 3;
+		String_t* L_19 = (L_17)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_18));
+		float L_20;
+		L_20 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_19, NULL);
+		V_4 = L_20;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = V_0;
+		int32_t L_22 = 4;
+		String_t* L_23 = (L_21)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		float L_24;
+		L_24 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_23, NULL);
+		V_5 = L_24;
+		float L_25 = V_1;
+		float L_26 = V_2;
+		float L_27 = V_3;
+		float L_28 = V_4;
+		float L_29 = V_5;
+		TestController_AddQueue_m511578E05A7ECEB1D52A4A405DE6C2B66B1A12DE(__this, L_25, L_26, L_27, L_28, L_29, NULL);
+		return;
+	}
+
+IL_005d:
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_30 = V_0;
+		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_30)->max_length))) == ((uint32_t)1))))
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = V_0;
+		int32_t L_32 = 0;
+		String_t* L_33 = (L_31)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_32));
+		float L_34;
+		L_34 = Single_Parse_m621F610BB84997A2E3C4686913F482316CD3E6B8(L_33, NULL);
+		TestController_Steering_mC88C10654D5F03A3805BFB20C93EB786BC7AF97B(__this, L_34, NULL);
+	}
+
+IL_0071:
+	{
 		return;
 	}
 }
@@ -1233,7 +1276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_Start_mC172F049618446009E
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_AddQueue_m6346F812CFC5671E55F764EF14C15F5FFEFEB3B8 (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_angle, float ___5_duration, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_AddQueue_m511578E05A7ECEB1D52A4A405DE6C2B66B1A12DE (TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* __this, float ___0_frontLeftSpeed, float ___1_frontRightSpeed, float ___2_rearLeftSpeed, float ___3_rearRightSpeed, float ___4_duration, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1248,11 +1291,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestController_AddQueue_m6346F812CFC5671
 		float L_2 = ___1_frontRightSpeed;
 		float L_3 = ___2_rearLeftSpeed;
 		float L_4 = ___3_rearRightSpeed;
-		float L_5 = ___4_angle;
-		float L_6 = ___5_duration;
-		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_7 = (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5*)il2cpp_codegen_object_new(MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5_il2cpp_TypeInfo_var);
-		MovementCommand__ctor_mE3156D6A742376F1317C04845C946CFD90225644(L_7, L_1, L_2, L_3, L_4, L_5, L_6, NULL);
-		Queue_1_Enqueue_mEB21554F6CD6FAA0096ABE58AB827FC864A9BDAA(L_0, L_7, Queue_1_Enqueue_mEB21554F6CD6FAA0096ABE58AB827FC864A9BDAA_RuntimeMethod_var);
+		float L_5 = ___4_duration;
+		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_6 = (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5*)il2cpp_codegen_object_new(MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5_il2cpp_TypeInfo_var);
+		MovementCommand__ctor_mB35ECD7EB4C52152963F55A210C92DEC76311196(L_6, L_1, L_2, L_3, L_4, L_5, NULL);
+		Queue_1_Enqueue_mEB21554F6CD6FAA0096ABE58AB827FC864A9BDAA(L_0, L_6, Queue_1_Enqueue_mEB21554F6CD6FAA0096ABE58AB827FC864A9BDAA_RuntimeMethod_var);
 		TestController_StartExecution_m4589DD428CA92F83D5286E6852A979CF15FD2A8A(__this, NULL);
 		return;
 	}
@@ -1554,7 +1596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CExecuteMovementQueueU3Ed__16_MoveNext
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)1)))
 		{
-			goto IL_007d;
+			goto IL_0071;
 		}
 	}
 	{
@@ -1566,7 +1608,7 @@ IL_0017:
 		__this->___U3CU3E1__state = (-1);
 		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_4 = V_1;
 		L_4->___isExecuting = (bool)1;
-		goto IL_008a;
+		goto IL_007e;
 	}
 
 IL_0027:
@@ -1579,56 +1621,51 @@ IL_0027:
 		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_8 = V_1;
 		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_9 = V_2;
 		float L_10;
-		L_10 = MovementCommand_get_Angle_mE4D0F0D7F762EBF861C9CCBDE831D7BF06589BA2_inline(L_9, NULL);
-		TestController_Steering_mC88C10654D5F03A3805BFB20C93EB786BC7AF97B(L_8, L_10, NULL);
-		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_11 = V_1;
-		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_12 = V_2;
-		float L_13;
-		L_13 = MovementCommand_get_FrontLeftSpeed_mF76F37FAC2F74F1A34900CFCE0BAE832F4BBDC10_inline(L_12, NULL);
-		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_14 = V_2;
-		float L_15;
-		L_15 = MovementCommand_get_FrontRightSpeed_m1BF22D71EBB41F581E1C706669A449FC995E015B_inline(L_14, NULL);
-		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_16 = V_2;
-		float L_17;
-		L_17 = MovementCommand_get_RearLeftSpeed_m87D878A96BA6A00893A22D3F1FAF344F2EBF9071_inline(L_16, NULL);
+		L_10 = MovementCommand_get_FrontLeftSpeed_mF76F37FAC2F74F1A34900CFCE0BAE832F4BBDC10_inline(L_9, NULL);
+		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_11 = V_2;
+		float L_12;
+		L_12 = MovementCommand_get_FrontRightSpeed_m1BF22D71EBB41F581E1C706669A449FC995E015B_inline(L_11, NULL);
+		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_13 = V_2;
+		float L_14;
+		L_14 = MovementCommand_get_RearLeftSpeed_m87D878A96BA6A00893A22D3F1FAF344F2EBF9071_inline(L_13, NULL);
+		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_15 = V_2;
+		float L_16;
+		L_16 = MovementCommand_get_RearRightSpeed_m4F7900539FE1E73C63DFBC1020AE8BFA0604196F_inline(L_15, NULL);
+		TestController_SetSpeed_m179409E051F4BAFC73EA992C561ECF3CACEAB264(L_8, L_10, L_12, L_14, L_16, NULL);
+		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_17 = V_1;
+		TestController_UpdateWheels_m4DB711529DE4AAC8A485F0934E0CC4540D0BE3AA(L_17, NULL);
 		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_18 = V_2;
 		float L_19;
-		L_19 = MovementCommand_get_RearRightSpeed_m4F7900539FE1E73C63DFBC1020AE8BFA0604196F_inline(L_18, NULL);
-		TestController_SetSpeed_m179409E051F4BAFC73EA992C561ECF3CACEAB264(L_11, L_13, L_15, L_17, L_19, NULL);
-		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_20 = V_1;
-		TestController_UpdateWheels_m4DB711529DE4AAC8A485F0934E0CC4540D0BE3AA(L_20, NULL);
-		MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* L_21 = V_2;
-		float L_22;
-		L_22 = MovementCommand_get_Duration_mF4D2468BDFA101D0770D8767692E47B8E007BA64_inline(L_21, NULL);
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_23 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_23, L_22, NULL);
-		__this->___U3CU3E2__current = L_23;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_23);
+		L_19 = MovementCommand_get_Duration_mF4D2468BDFA101D0770D8767692E47B8E007BA64_inline(L_18, NULL);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_20 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_20, L_19, NULL);
+		__this->___U3CU3E2__current = L_20;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_20);
 		__this->___U3CU3E1__state = 1;
 		return (bool)1;
 	}
 
-IL_007d:
+IL_0071:
 	{
 		__this->___U3CU3E1__state = (-1);
-		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_24 = V_1;
-		TestController_UpdateWheels_m4DB711529DE4AAC8A485F0934E0CC4540D0BE3AA(L_24, NULL);
+		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_21 = V_1;
+		TestController_UpdateWheels_m4DB711529DE4AAC8A485F0934E0CC4540D0BE3AA(L_21, NULL);
 	}
 
-IL_008a:
+IL_007e:
 	{
-		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_25 = V_1;
-		Queue_1_t176A096FE2B54B9843772B4CF64D5D7B3D2DF1A7* L_26 = L_25->___movementQueue;
-		int32_t L_27;
-		L_27 = Queue_1_get_Count_m5EC12876971639F99305B117472BB1133E965B9A_inline(L_26, Queue_1_get_Count_m5EC12876971639F99305B117472BB1133E965B9A_RuntimeMethod_var);
-		if ((((int32_t)L_27) > ((int32_t)0)))
+		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_22 = V_1;
+		Queue_1_t176A096FE2B54B9843772B4CF64D5D7B3D2DF1A7* L_23 = L_22->___movementQueue;
+		int32_t L_24;
+		L_24 = Queue_1_get_Count_m5EC12876971639F99305B117472BB1133E965B9A_inline(L_23, Queue_1_get_Count_m5EC12876971639F99305B117472BB1133E965B9A_RuntimeMethod_var);
+		if ((((int32_t)L_24) > ((int32_t)0)))
 		{
 			goto IL_0027;
 		}
 	}
 	{
-		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_28 = V_1;
-		L_28->___isExecuting = (bool)0;
+		TestController_tF06DAD88F33C85176A0659827B71B4F37A1E4F72* L_25 = V_1;
+		L_25->___isExecuting = (bool)0;
 		return (bool)0;
 	}
 }
@@ -1935,14 +1972,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_RearRigh
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___0_value;
-		__this->___U3CAngleU3Ek__BackingField = L_0;
-		return;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Duration_mD5E9ABDA8A37BAE13BBE3678F6322E614042B2B6_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1951,11 +1980,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Duration
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_Angle_mE4D0F0D7F762EBF861C9CCBDE831D7BF06589BA2_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MovementCommand_set_Angle_m67F5B11776F0A868DBC57B4BF90ADAD38F585913_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = __this->___U3CAngleU3Ek__BackingField;
-		return L_0;
+		float L_0 = ___0_value;
+		__this->___U3CAngleU3Ek__BackingField = L_0;
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MovementCommand_get_FrontLeftSpeed_mF76F37FAC2F74F1A34900CFCE0BAE832F4BBDC10_inline (MovementCommand_t39E13764D37FB86F1E7FC0BB95E8A81045720BF5* __this, const RuntimeMethod* method) 
