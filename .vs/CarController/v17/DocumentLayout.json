@@ -11,16 +11,32 @@
       "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trackboundarycheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\admin\\carcontroller\\assets\\script\\detectingblack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\script\\detectingblack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\scripts\\vehicle control\\vehicledebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vehicle control\\vehicledebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\script\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\scripts\\stunt\\stuntdetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stunt\\stuntdetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\script\\followcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\followcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\scripts\\input\\basicinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\basicinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\scripts\\drivetrain\\gasmotor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drivetrain\\gasmotor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\CarController\\Assets\\Script\\DetectingBlack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\DetectingBlack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\script\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C25869FE-A3A6-4C90-0014-A4059A966E1C}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CarController\\assets\\script\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +50,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "VehicleDebug.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Vehicle Control\\VehicleDebug.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Vehicle Control\\VehicleDebug.cs",
+              "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Vehicle Control\\VehicleDebug.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Vehicle Control\\VehicleDebug.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:06:01.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StuntDetect.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Stunt\\StuntDetect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Stunt\\StuntDetect.cs",
+              "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Stunt\\StuntDetect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Stunt\\StuntDetect.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAwE4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:05:49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BasicInput.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Input\\BasicInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\BasicInput.cs",
+              "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Input\\BasicInput.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\BasicInput.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwBsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:03:36.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GasMotor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Drivetrain\\GasMotor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Drivetrain\\GasMotor.cs",
+              "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Scripts\\Drivetrain\\GasMotor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Drivetrain\\GasMotor.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwEAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:02:35.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DetectingBlack.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Script\\DetectingBlack.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\DetectingBlack.cs",
@@ -46,12 +111,11 @@
               "RelativeToolTip": "Assets\\Script\\DetectingBlack.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAA5wBwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:58:07.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T06:58:07.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Script\\Car.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Car.cs",
@@ -69,7 +133,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\TrackBoundaryCheck.cs",
               "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Script\\TrackBoundaryCheck.cs",
               "RelativeToolTip": "Assets\\Script\\TrackBoundaryCheck.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA4AAAAkAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwA4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T04:06:04.386Z",
               "EditorCaption": ""
@@ -82,7 +146,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\TestController.cs",
               "ToolTip": "C:\\Users\\Admin\\CarController\\Assets\\Script\\TestController.cs",
               "RelativeToolTip": "Assets\\Script\\TestController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAowFwAAAAdAAAA",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAANQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T05:18:40.242Z",
               "EditorCaption": ""
@@ -101,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "CarController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CarController\\Assets\\Script\\CarController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CarController.cs",

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638659855506941142
-    m_Hash: 565120548
+      ticks: 638665696118940684
+    m_Hash: 328020453
   m_LockFileStatus:
     m_FilePath: C:/Users/Admin/CarController/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638659855507067855
-    m_Hash: 968419440
+      ticks: 638665696118950688
+    m_Hash: 2227632779
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

@@ -88,10 +88,10 @@ public class TestController : MonoBehaviour
             StartCoroutine(ExecuteMovementQueue());
         }
     }
-    private void LateUpdate()
+   /* private void LateUpdate()
     {
         DetectLinePosition();
-    }
+    }*/
     private void Update()
     {
         if (TrackBoundaryCheck.IsBoundary)
@@ -102,7 +102,7 @@ public class TestController : MonoBehaviour
             movementQueue.Clear();
             
         }
-        
+        DetectLinePosition();
     }
 
 
@@ -211,7 +211,7 @@ public class TestController : MonoBehaviour
             SetSpeed(0f, 0f, 0f, 0f);
         }
     }
-    bool IsOnLine(RenderTexture cameraTexture)
+    /*bool IsOnLine(RenderTexture cameraTexture)
     {
         Texture2D tex = new Texture2D(16, 16, TextureFormat.RGB24, false);
         RenderTexture.active = cameraTexture;
@@ -224,5 +224,68 @@ public class TestController : MonoBehaviour
 
         // Kiểm tra nếu màu gần đen (một ngưỡng cho phép để nhận diện)
         return (color.r < 0.1f && color.g < 0.1f && color.b < 0.1f);
+    }*/
+    /*bool IsOnLine(RenderTexture cameraTexture)
+    {
+        // Kích thước của Texture2D để lấy mẫu
+        int sampleSize = 16;
+        Texture2D tex = new Texture2D(sampleSize, sampleSize, TextureFormat.RGB24, false);
+
+        // Lấy toàn bộ khung hình từ RenderTexture
+        RenderTexture.active = cameraTexture;
+        tex.ReadPixels(new Rect(0, 0, sampleSize, sampleSize), 0, 0);
+        tex.Apply();
+        RenderTexture.active = null;
+
+        // Kiểm tra từng pixel trong khung hình
+        for (int x = 0; x < sampleSize; x++)
+        {
+            for (int y = 0; y < sampleSize; y++)
+            {
+                Color color = tex.GetPixel(x, y);
+                // Kiểm tra nếu màu gần đen
+                if (color.r < 0.1f && color.g < 0.1f && color.b < 0.1f)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }*/
+
+    bool IsOnLine(RenderTexture cameraTexture)
+    {
+        Texture2D tex = new Texture2D(16, 16, TextureFormat.RGB24, false);
+        RenderTexture.active = cameraTexture;
+        tex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
+        tex.Apply();
+
+        int blackPixelCount = 0;
+        int totalPixels = tex.width * tex.height;
+
+        // Duyệt qua tất cả các pixel trong Texture2D
+        for (int y = 0; y < tex.height; y++)
+        {
+            for (int x = 0; x < tex.width; x++)
+            {
+                Color color = tex.GetPixel(x, y);
+                // Kiểm tra nếu màu là gần đen
+                if (color.r < 0.1f && color.g < 0.1f && color.b < 0.1f)
+                {
+                    blackPixelCount++;
+                }
+            }
+        }
+
+        RenderTexture.active = null;
+
+        // Tính tỷ lệ màu đen
+        float blackPixelRatio = (float)blackPixelCount / totalPixels;
+        Debug.Log($"Black Pixel Ratio: {blackPixelRatio}");
+
+        // Nếu tỷ lệ màu đen lớn hơn 40% (0.4), trả về true
+        return blackPixelRatio > 0.4f;
     }
+
 }

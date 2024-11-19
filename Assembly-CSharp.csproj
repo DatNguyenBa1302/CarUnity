@@ -60,11 +60,73 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Static\GizmosExtra.cs" />
     <Compile Include="Assets\Script\TrackBoundaryCheck.cs" />
+    <Compile Include="Assets\Scripts\Suspension\Suspension.cs" />
+    <Compile Include="Assets\Scripts\Suspension\PropertyToggleSetter.cs" />
+    <Compile Include="Assets\Scripts\Static\F.cs" />
+    <Compile Include="Assets\Scripts\Editors\PropertyToggleSetterEditor.cs" />
+    <Compile Include="Assets\Scripts\Editors\DetachablePartEditor.cs" />
+    <Compile Include="Assets\Scripts\Editors\TerrainSurfaceEditor.cs" />
+    <Compile Include="Assets\Scripts\Vehicle Control\VehicleBalance.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\GasMotor.cs" />
+    <Compile Include="Assets\Scripts\Editors\HoverMotorEditor.cs" />
     <Compile Include="Assets\Script\Car.cs" />
+    <Compile Include="Assets\Scripts\Ground\GroundSurfaceMaster.cs" />
+    <Compile Include="Assets\Scripts\Stunt\FlipControl.cs" />
+    <Compile Include="Assets\Scripts\Hover\HoverMotor.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\Motor.cs" />
+    <Compile Include="Assets\Scripts\Hover\HoverWheel.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\ContinuousTransmission.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\Wheel.cs" />
+    <Compile Include="Assets\Scripts\Demo\VehicleMenu.cs" />
+    <Compile Include="Assets\Scripts\Effects\LightController.cs" />
+    <Compile Include="Assets\Scripts\Demo\PerformanceStats.cs" />
+    <Compile Include="Assets\Scripts\Hover\HoverSteer.cs" />
+    <Compile Include="Assets\Scripts\Input\BasicInput.cs" />
     <Compile Include="Assets\Script\FollowCar.cs" />
+    <Compile Include="Assets\Scripts\Static\MeshUtil.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\DriveForce.cs" />
+    <Compile Include="Assets\Scripts\Vehicle Control\VehicleAssist.cs" />
+    <Compile Include="Assets\Scripts\Suspension\SuspensionPart.cs" />
+    <Compile Include="Assets\Scripts\Editors\GroundSurfaceInstanceEditor.cs" />
+    <Compile Include="Assets\Scripts\Scene\GlobalControl.cs" />
+    <Compile Include="Assets\Scripts\Editors\SuspensionPartEditor.cs" />
+    <Compile Include="Assets\Scripts\Damage\ShatterPart.cs" />
+    <Compile Include="Assets\Scripts\Stunt\StuntManager.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\GearboxTransmission.cs" />
+    <Compile Include="Assets\Scripts\Editors\GasMotorEditor.cs" />
+    <Compile Include="Assets\Scripts\Ground\GroundSurfaceInstance.cs" />
+    <Compile Include="Assets\Scripts\Suspension\SuspensionPropertyToggle.cs" />
     <Compile Include="Assets\Script\TestController.cs" />
+    <Compile Include="Assets\Scripts\Drivetrain\Transmission.cs" />
+    <Compile Include="Assets\Scripts\Input\MobileInput.cs" />
+    <Compile Include="Assets\Scripts\Vehicle Control\SteeringControl.cs" />
+    <Compile Include="Assets\Scripts\Editors\GearboxTransmissionEditor.cs" />
+    <Compile Include="Assets\Scripts\Camera\BasicCameraInput.cs" />
+    <Compile Include="Assets\Scripts\Effects\VehicleLight.cs" />
+    <Compile Include="Assets\Scripts\Editors\HoverWheelEditor.cs" />
+    <Compile Include="Assets\Scripts\Damage\DetachablePart.cs" />
+    <Compile Include="Assets\Scripts\Editors\SuspensionEditor.cs" />
+    <Compile Include="Assets\Scripts\Vehicle Control\VehicleDebug.cs" />
+    <Compile Include="Assets\Scripts\Vehicle Control\VehicleParent.cs" />
+    <Compile Include="Assets\Scripts\Damage\VehicleDamage.cs" />
+    <Compile Include="Assets\Scripts\Input\MobileInputGet.cs" />
     <Compile Include="Assets\Script\CarController.cs" />
+    <Compile Include="Assets\Scripts\Effects\TireScreech.cs" />
+    <Compile Include="Assets\Scripts\Editors\WheelEditor.cs" />
+    <Compile Include="Assets\Scripts\Ground\TerrainSurface.cs" />
+    <Compile Include="Assets\Scripts\AI\FollowAI.cs" />
+    <Compile Include="Assets\Scripts\Stunt\StuntDetect.cs" />
+    <Compile Include="Assets\Scripts\Effects\TireMarkCreate.cs" />
+    <Compile Include="Assets\Scripts\AI\VehicleWaypoint.cs" />
+    <Compile Include="Assets\Scripts\Editors\VehicleParentEditor.cs" />
+    <Compile Include="Assets\Scripts\Scene\TimeMaster.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\Tires.shader" />
+    <None Include="Assets\Shaders\Tires-Bump.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
